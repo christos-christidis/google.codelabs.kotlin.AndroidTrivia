@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_title">
 
         <action
-            android:id="@+id/action_titleFragment_to_gameFragment"
+            android:id="@+id/action_title_to_game"
             app:destination="@id/gameFragment" />
     </fragment>
 
@@ -22,15 +22,14 @@
         android:label="GameFragment"
         tools:layout="@layout/fragment_game">
 
-        <!-- SOS: pop up the backstack up to the GameFragment (inclusive). See codelab 3.2 for more -->
         <action
-            android:id="@+id/action_gameFragment_to_gameWonFragment"
+            android:id="@+id/action_game_to_gameWon"
             app:destination="@id/gameWonFragment"
             app:popUpTo="@id/gameFragment"
             app:popUpToInclusive="true" />
 
         <action
-            android:id="@+id/action_gameFragment_to_gameOverFragment"
+            android:id="@+id/action_game_to_gameOver"
             app:destination="@id/gameOverFragment"
             app:popUpTo="@+id/gameFragment"
             app:popUpToInclusive="true" />
@@ -43,7 +42,7 @@
         tools:layout="@layout/fragment_game_over">
 
         <action
-            android:id="@+id/action_gameOverFragment_to_gameFragment"
+            android:id="@+id/action_gameOver_to_game"
             app:destination="@id/gameFragment"
             app:popUpTo="@+id/titleFragment" />
     </fragment>
@@ -55,9 +54,15 @@
         tools:layout="@layout/fragment_game_won">
 
         <action
-            android:id="@+id/action_gameWonFragment_to_gameFragment"
+            android:id="@+id/action_gameWon_to_game"
             app:destination="@id/gameFragment"
             app:popUpTo="@+id/titleFragment" />
+        <argument
+            android:name="numQuestions"
+            app:argType="integer" />
+        <argument
+            android:name="numCorrectAnswers"
+            app:argType="integer" />
     </fragment>
 
     <fragment

@@ -31,12 +31,12 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_gameFragment_to_gameOverFragment">
+                            <entry key="action_game_to_gameOver">
                               <value>
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_gameFragment_to_gameWonFragment">
+                            <entry key="action_game_to_gameWon">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -57,7 +57,7 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_gameOverFragment_to_gameFragment">
+                            <entry key="action_gameOver_to_game">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -78,7 +78,7 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_gameWonFragment_to_gameFragment">
+                            <entry key="action_gameWon_to_game">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -111,7 +111,7 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_titleFragment_to_gameFragment">
+                            <entry key="action_title_to_game">
                               <value>
                                 <LayoutPositions />
                               </value>
